@@ -1,0 +1,66 @@
+{
+  "title": "Module 4 - Introduction to Persistent Volumes",
+  "description": "In this lab, we will create PersistentVolumes, and provide them to Pods via PersistentVolumeClaims.",
+  "difficulty": "intermediate",
+  "time": "15-20 minutes",
+  "details": {
+    "assets": {
+      "host01": [
+        {
+          "file": "answers/*",
+          "target": "/.answers"
+        },
+        {
+          "file": "resources/*",
+          "target": "/root/newresources"
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": "Local Volumes",
+        "text": "step1.md"
+      },
+      {
+        "title": "Creating a PersistentVolume",
+        "text": "step2.md"
+      },
+      {
+        "title": "Creating a PersistentVolumeClaim",
+        "text": "step3.md"
+      },
+      {
+        "title": "Adding Storage to Pods",
+        "text": "step4.md"
+      },
+      {
+        "title": "Clean-Up",
+        "text": "step5.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh",
+      "credits": "Developer(s): [William Hearn](https://sylus.ca)",
+      "courseData": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "uilayout": "terminal",
+    "dashboards": [
+      {
+        "name": "Dashboard",
+        "href": "https://[[HOST_SUBDOMAIN]]-30000-[[KATACODA_HOST]].environments.katacoda.com"
+      }
+    ],
+    "uisettings": "yaml",
+    "uimessage1": "\u001b[36;1mDigital Academy training.\u001b[0m"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running"
+  }
+}

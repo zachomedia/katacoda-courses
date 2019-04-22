@@ -1,0 +1,70 @@
+{
+  "title": "Module 1: Kubernetes Overview",
+  "description": "In this lab, we will demonstrate how Kubernetes can deploy containers and complex apps.",
+  "difficulty": "beginner",
+  "time": "10-15 minutes",
+  "details": {
+    "assets": {
+      "host01": [
+        {
+          "file": "answers/*",
+          "target": ".answers"
+        },
+        {
+          "file": "resources/*",
+          "target": "/root/newresources"
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": "Cluster Info",
+        "text": "step1.md"
+      },
+      {
+        "title": "Deploy Applications",
+        "text": "step2.md"
+      },
+      {
+        "title": "Kubernetes Dashboard",
+        "text": "step3.md"
+      },
+      {
+        "title": "Demo Application",
+        "text": "step4.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh",
+      "credits": "Developer(s): [William Hearn](https://sylus.ca)",
+      "courseData": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "uilayout": "terminal",
+    "dashboards": [
+      {
+        "name": "Dashboard",
+        "href": "https://[[HOST_SUBDOMAIN]]-30000-[[KATACODA_HOST]].environments.katacoda.com"
+      },
+      {
+        "name": "Vote",
+        "href": "https://[[HOST_SUBDOMAIN]]-31000-[[KATACODA_HOST]].environments.katacoda.com"
+      },
+      {
+        "name": "Vote Results",
+        "href": "https://[[HOST_SUBDOMAIN]]-31001-[[KATACODA_HOST]].environments.katacoda.com"
+      }
+    ],
+    "uisettings": "yaml",
+    "uimessage1": "\u001b[36;1mDigital Academy training.\u001b[0m"
+  },
+  "backend": {
+    "imageid": "kubernetes"
+  }
+}

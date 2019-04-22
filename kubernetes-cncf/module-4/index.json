@@ -1,0 +1,77 @@
+{
+  "title": "Module 4 - Logging with EFK",
+  "description": "In this lab, we will learn how to learn how to aggregate logs on Kubernetes. Logging with ElasticsSearch, Fluent Bit, and Kibana (EFK).",
+  "difficulty":	"Beginner",
+  "time":	"20 minutes",
+  "details": {
+    "assets": {
+      "host01": [
+        {
+          "file": "answers/*",
+          "target": "/.answers"
+        },
+        {
+          "file": "resources/*",
+          "target": "/root/newresources"
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": "Your Kubernetes Cluster",
+        "text": "step1.md"
+      },
+      {
+        "title": "Deploy ElasticSearch",
+        "text": "step2.md",
+        "code": "clear.sh"
+      },
+      {
+        "title": "Deploy Fluent Bit",
+        "text": "step3.md",
+        "code": "clear.sh"
+      },
+      {
+        "title": "Deploy Kibana",
+        "text": "step4.md",
+        "code": "clear.sh"
+      },
+      {
+        "title": "Generate Log Events",
+        "text": "step5.md"
+      },
+      {
+        "title": "View Log Events",
+        "text": "step6.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh",
+      "credits": "Developer(s): [William Hearn](https://sylus.ca)",
+      "courseData": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "uilayout": "terminal",
+    "dashboards": [
+      {
+        "name": "Dashboard",
+        "href": "https://[[HOST_SUBDOMAIN]]-30000-[[KATACODA_HOST]].environments.katacoda.com"
+      },
+      {
+        "name": "Kibana",
+        "href": "https://[[HOST_SUBDOMAIN]]-31000-[[KATACODA_HOST]].environments.katacoda.com"
+      }
+    ],
+    "uisettings": "yaml",
+    "uimessage1": "\u001b[36;1mDigital Academy training.\u001b[0m"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running"
+  }
+}

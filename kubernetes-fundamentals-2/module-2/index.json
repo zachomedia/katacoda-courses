@@ -1,0 +1,69 @@
+{
+  "title": "ConfigMaps",
+  "description": "In this lab, we will decouple configuration from applications with Kubernetes ConfigMaps.",
+  "difficulty": "intermediate",
+  "time": "15-20 minutes",
+  "details": {
+    "assets": {
+      "host01": [
+        {
+          "file": "answers/*",
+          "target": "/.answers"
+        },
+        {
+          "file": "resources/*",
+          "target": "/root/newresources"
+        }
+      ]
+    },
+    "steps": [{
+        "title": "Create ConfigMaps from Literal Values",
+        "text": "step1.md"
+      },
+      {
+        "title": "Create ConfigMaps from Files",
+        "text": "step2.md"
+      },
+      {
+        "title": "Create ConfigMaps from Directories",
+        "text": "step3.md"
+      },
+      {
+        "title": "Using ConfigMaps in Deployments",
+        "text": "step4.md"
+      },
+      {
+        "title": "Creating Environment Variables from all values in a ConfigMap",
+        "text": "step5.md"
+      },
+      {
+        "title": "Configuring Redis with ConfigMaps",
+        "text": "step6.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh",
+      "credits": "Developer(s): [William Hearn](https://sylus.ca)",
+      "courseData": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "uilayout": "terminal",
+    "dashboards": [
+      {
+        "name": "Dashboard",
+        "href": "https://[[HOST_SUBDOMAIN]]-30000-[[KATACODA_HOST]].environments.katacoda.com"
+      }
+    ],
+    "uisettings": "yaml",
+    "uimessage1": "\u001b[36;1mDigital Academy training.\u001b[0m"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running"
+  }
+}

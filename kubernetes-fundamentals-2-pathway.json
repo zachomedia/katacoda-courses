@@ -1,0 +1,32 @@
+{
+  "title": "Kubernetes Fundamentals 2",
+  "description": "Presented by the Digital Academy - Advanced concepts such as  Services, Configmaps, Secrets, and Persistent Volumes.",
+  "icon": "fa-kubernetes",
+  "courses": [
+    {
+      "course_id": "module-1",
+      "title": "Kubernetes Fundamentals 2: Module 1 - Introduction to Services",
+      "description": "In this lab, we will learn how Kubernetes Services provide access to Pods and Deployments."
+    },
+    {
+      "course_id": "module-2",
+      "title": "Kubernetes Fundamentals 2: Module 2 - Introduction to ConfigMaps",
+      "description": "In this lab, we will decouple configuration from applications with Kubernetes ConfigMaps."
+    },
+    {
+      "course_id": "module-3",
+      "title": "Kubernetes Fundamentals 2: Module 3 - Introduction to Secrets",
+      "description": "In this lab, we will deploy sensitive information to Pods with Kubernetes Secrets."
+    },
+    {
+      "course_id": "module-4",
+      "title": "Kubernetes Fundamentals 2: Module 4 - Introduction to Persistent Volumes",
+      "description": "In this lab, we will create PersistentVolumes, and provide them to Pods via PersistentVolumeClaims."
+    },
+    {
+      "course_id": "module-5",
+      "title": "Kubernetes Fundamentals 2: Module 5 - Introduction to Ingresses",
+      "description": "In this lab, we will learn about a higher level of abstraction of Kubernetes Services."
+    }
+  ]
+}

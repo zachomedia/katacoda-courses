@@ -1,0 +1,82 @@
+{
+  "title": "Kubernetes CNCF: Module 1 - Helm",
+  "description": "In this lab, we will learn about how to use Helm the package manager for Kubernetes.",
+  "difficulty": "Intermediate",
+  "time":	"25 minutes",
+  "details": {
+    "assets": {
+      "host01": [
+        {
+          "file": "answers/*",
+          "target": "/.answers"
+        },
+        {
+          "file": "resources/*",
+          "target": "/root/newresources"
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": "Install Helm",
+        "text": "step1.md"
+      },
+      {
+        "title": "Search For Redis Chart",
+        "text": "step2.md"
+      },
+      {
+        "title": "Deploy Redis",
+        "text": "step3.md"
+      },
+      {
+        "title": "Observe Redis",
+        "text": "step4.md"
+      },
+      {
+        "title": "Remove Redis",
+        "text": "step5.md"
+      },
+      {
+        "title": "Explore Repositories",
+        "text": "step6.md"
+      },
+      {
+        "title": "Add Repositories",
+        "text": "step7.md"
+      },
+      {
+        "title": "Create Chart",
+        "text": "step8.md"
+      },
+      {
+        "title": "Update Chart",
+        "text": "step9.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh",
+      "credits": "Developer(s): [William Hearn](https://sylus.ca)",
+      "courseData": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "uilayout": "terminal",
+    "dashboards": [
+      {
+        "name": "Nginx",
+        "href": "https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com"
+      }
+    ],
+    "uisettings": "yaml",
+    "uimessage1": "\u001b[36;1mDigital Academy training.\u001b[0m"
+  },
+  "backend": {
+    "imageid": "kubernetes"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "title": "Kubernetes CNCF",
+  "description": "Presented by the Digital Academy - An overview of some of the more popular CNCF projects.",
+  "icon": "fa-kubernetes",
+  "courses": [
+    {
+      "course_id": "module-1",
+      "title": "Kubernetes CNCF: Module 1 - Helm",
+      "description": "In this lab, we will learn about how to use Helm the package manager for Kubernetes."
+    },
+    {
+      "course_id": "module-2",
+      "title": "Kubernetes CNCF: Module 2 - Heptio Velero",
+      "description": "In this lab, we will learn how to manage disaster recovery for your Kubernetes cluster resources and persistent volumes."
+    },
+    {
+      "course_id": "module-3",
+      "title": "Kubernetes CNCF: Module 3 - Prometheus Getting Started",
+      "description": "In this lab, we will learn how to start collecting system metrics with Prometheus."
+    },
+    {
+      "course_id": "module-4",
+      "title": "Kubernetes CNCF: Module 4 - Logging with EFK",
+      "description": "In this lab, we will learn how to implement centralized logging using an ElasticsSearch, Fluent Bit, and Kibana (EFK) stack on Kubernetes."
+    },
+    {
+      "course_id": "module-5",
+      "title": "Kubernetes CNCF: Module 5 - Istio Getting Started",
+      "description": "In this lab, we will learn about how to use the Istio Service Mesh."
+    },
+    {
+      "course_id": "module-6",
+      "title": "Kubernetes CNCF: Module 6 - KNative Getting Started",
+      "description": "In this lab, we will learn about how to use KNative."
+    }
+  ]
+}

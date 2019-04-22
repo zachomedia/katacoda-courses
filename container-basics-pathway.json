@@ -1,0 +1,12 @@
+{
+  "title": "Container Basics",
+  "description": "Presented by the Digital Academy - A high level overview of Containers.",
+  "icon": "fa-docker",
+  "courses": [
+    {
+      "course_id": "module-1",
+      "title": "Container Basics: Module 1 - Intro To Docker",
+      "description": "In this lab, we will examine the Docker CLI and execute our first container."
+    }
+  ]
+}

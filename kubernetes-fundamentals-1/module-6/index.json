@@ -1,0 +1,65 @@
+{
+  "title": "Module 6 - Review Fundamentals",
+  "description": "In this lab, let's cover everything we learned so far in Kubernetes Fundamentals.",
+  "difficulty": "intermediate",
+  "time": "20-30 minutes",
+  "details": {
+    "assets": {
+      "host01": [
+        {
+          "file": "answers/*",
+          "target": "/.answers"
+        },
+        {
+          "file": "resources/*",
+          "target": "/root/newresources"
+        }
+      ]
+    },
+    "steps": [{
+        "title": "Kubectl",
+        "text": "step1.md"
+      },
+      {
+        "title": "Labels and Selectors",
+        "text": "step2.md"
+      },
+      {
+        "title": "Pods",
+        "text": "step3.md"
+      },
+      {
+        "title": "ReplicaSets and Deployments",
+        "text": "step4.md"
+      },
+      {
+        "title": "Configuring Minecraft",
+        "text": "step5.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh",
+      "credits": "Developer(s): [William Hearn](https://sylus.ca)",
+      "courseData": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "uilayout": "editor-terminal",
+    "dashboards": [
+      {
+        "name": "Dashboard",
+        "href": "https://[[HOST_SUBDOMAIN]]-30000-[[KATACODA_HOST]].environments.katacoda.com"
+      }
+    ],
+    "uisettings": "yaml",
+    "uimessage1": "\u001b[36;1mDigital Academy training.\u001b[0m"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running"
+  }
+}

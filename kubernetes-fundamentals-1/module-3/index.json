@@ -1,0 +1,74 @@
+{
+  "title": "Module 3 - Intro to Pods",
+  "description": "In this lab, we will examine how to run containers in Pods.",
+  "difficulty": "beginner",
+  "time": "45-60 minutes",
+  "details": {
+    "assets": {
+      "host01": [
+        {
+          "file": "answers/*",
+          "target": ".answers"
+        },
+        {
+          "file": "resources/*",
+          "target": "/root/newresources"
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": "Pods on the command line",
+        "text": "step1.md"
+      },
+      {
+        "title": "PodSpec Files",
+        "text": "step2.md"
+      },
+      {
+        "title": "Interacting with Pods",
+        "text": "step3.md"
+      },
+      {
+        "title": "Configuring NGiNX",
+        "text": "step4.md"
+      },
+      {
+        "title": "Multi-container Pods",
+        "text": "step5.md"
+      },
+      {
+        "title": "Sharing Volumes",
+        "text": "step6.md"
+      },
+      {
+        "title": "Pod IPC",
+        "text": "step7.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh",
+      "credits": "Developer(s): [William Hearn](https://sylus.ca)",
+      "courseData": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "uilayout": "editor-terminal",
+    "dashboards": [
+      {
+        "name": "Dashboard",
+        "href": "https://[[HOST_SUBDOMAIN]]-30000-[[KATACODA_HOST]].environments.katacoda.com"
+      }
+    ],
+    "uisettings": "yaml",
+    "uimessage1": "\u001b[36;1mDigital Academy training.\u001b[0m"
+    },
+  "backend": {
+    "imageid": "kubernetes-cluster-running"
+  }
+}

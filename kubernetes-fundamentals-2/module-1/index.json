@@ -1,0 +1,78 @@
+{
+  "title": "Module 1 - Introduction to Services",
+  "description": "In this lab, we will learn how Kubernetes Services provide access to Pods and Deployments.",
+  "difficulty": "beginner",
+  "time": "20-30 minutes",
+  "details": {
+    "assets": {
+      "host01": [
+        {
+          "file": "answers/*",
+          "target": ".answers"
+        },
+        {
+          "file": "resources/*",
+          "target": "/root/newresources"
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": "Intro to Services",
+        "text": "step1.md"
+      },
+      {
+        "title": "Create a Deployment",
+        "text": "step2.md"
+      },
+      {
+        "title": "ClusterIPs on the Command Line",
+        "text": "step3.md"
+      },
+      {
+        "title": "ClusterIP Manifests",
+        "text": "step4.md"
+      },
+      {
+        "title": "Pod-to-Pod communication",
+        "text": "step5.md"
+      },
+      {
+        "title": "Using a NodePort",
+        "text": "step6.md"
+      },
+      {
+        "title": "Vue.js",
+        "text": "step7.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh",
+      "credits": "Developer(s): [William Hearn](https://sylus.ca)",
+      "courseData": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "uilayout": "terminal",
+    "dashboards": [
+      {
+        "name": "Dashboard",
+        "href": "https://[[HOST_SUBDOMAIN]]-30000-[[KATACODA_HOST]].environments.katacoda.com"
+      },
+      {
+        "name": "Vue.js",
+        "href": "https://[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com"
+      }
+    ],
+    "uisettings": "yaml",
+    "uimessage1": "\u001b[36;1mDigital Academy training.\u001b[0m"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running"
+  }
+}

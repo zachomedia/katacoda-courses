@@ -1,0 +1,76 @@
+{
+  "title": "Module 5 - Getting Started with Istio",
+  "description": "In this lab, we will learn about how to use the Istio Service Mesh",
+  "difficulty": "beginner",
+  "time": "10-15 minutes",
+  "details": {
+    "assets": {
+      "host01": [
+        {
+          "file": "answers/*",
+          "target": "/.answers"
+        },
+        {
+          "file": "resources/*",
+          "target": "/root/newresources"
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": "Launch Kubernetes Cluster",
+        "code": "set-env.sh",
+        "text": "step1.md"
+      },
+      {
+        "title": "Deploy Istio",
+        "courseData": "ensure-configured.sh",
+        "text": "step2.md"
+      },
+      {
+        "title": "Deploy Istio Metrics and Tracing",
+        "text": "step3.md"
+      },
+      {
+        "title": "Deploy Sample Application",
+        "text": "step4.md"
+      },
+      {
+        "title": "Control Routing",
+        "text": "step6.md"
+      },
+      {
+        "title": "Access Metrics",
+        "text": "step7.md"
+      },
+      {
+        "title": "Visualise Cluster using Weave Scope",
+        "text": "step8.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "credits": "Developer(s): [William Hearn](https://sylus.ca)",
+      "courseData": "env-init.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "uilayout": "terminal",
+    "dashboards": [
+      {
+        "name": "Istio",
+        "href": "https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com"
+      }
+    ],
+    "uisettings": "yaml",
+    "uimessage1": "\u001b[36;1mDigital Academy training.\u001b[0m"
+  },
+  "backend": {
+    "port": 80,
+    "dockerimage": "istio"
+  }
+}

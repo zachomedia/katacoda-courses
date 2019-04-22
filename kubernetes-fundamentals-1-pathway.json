@@ -1,0 +1,37 @@
+{
+  "title": "Kubernetes Fundamentals",
+  "description": "Presented by the Digital Academy - A high level overview of Kubernetes.",
+  "icon": "fa-kubernetes",
+  "courses": [
+    {
+      "course_id": "module-1",
+      "title": "Kubernetes Fundamentals: Module 1: Kubernetes Overview",
+      "description": "In this lab, we will demonstrate how Kubernetes can deploy containers and complex apps."
+    },
+    {
+      "course_id": "module-2",
+      "title": "Kubernetes Fundamentals: Module 2: Kubernetes Architecture",
+      "description": "In this lab, we will introduce you to the Kubernetes Architecture."
+    },
+    {
+      "course_id": "module-3",
+      "title": "Kubernetes Fundamentals: Module 3 - Introduction to Pods",
+      "description": "In this lab, we will examine how to run containers in Pods."
+    },
+    {
+      "course_id": "module-4",
+      "title": "Kubernetes Fundamentals: Module 4 - Introduction to Deployments",
+      "description": "In this lab, we will explain the concept of ReplicaSets and Deployments."
+    },
+    {
+      "course_id": "module-5",
+      "title": "Kubernetes Fundamentals: Module 5 - Deployment Types",
+      "description": "In this lab, we will examine how to run Pods using different deployment types."
+    },
+    {
+      "course_id": "module-6",
+      "title": "Kubernetes Fundamentals: Module 6 - Review Fundamentals",
+      "description": "In this lab, let's cover everything we learned in Kubernetes Fundamentals."
+    }
+  ]
+}

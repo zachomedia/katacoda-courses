@@ -1,0 +1,65 @@
+{
+  "title": "Module 3 - Getting Started with Prometheus",
+  "description": "In this lab, we will learn how to learn how to start collecting system metrics with Prometheus",
+  "difficulty": "beginner",
+  "time": "10-15 minutes",
+  "details": {
+    "assets": {
+      "host01": [
+        {
+          "file": "answers/*",
+          "target": "/.answers"
+        },
+        {
+          "file": "resources/*",
+          "target": "/root/newresources"
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": "Step 1 - Configure Prometheus",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2 - Start Prometheus",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - Start Node Exporter",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - View Metrics",
+        "text": "step4.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh",
+      "credits": "Developer(s): [William Hearn](https://sylus.ca)",
+      "courseData": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "files": [
+    "prometheus.yml"
+  ],
+  "environment": {
+    "showdashboard": true,
+    "uilayout": "editor-terminal",
+    "dashboards": [
+      {
+        "name": "Prometheus",
+        "href": "https://[[HOST_SUBDOMAIN]]-9090-[[KATACODA_HOST]].environments.katacoda.com"
+      }
+    ],
+    "uisettings": "yaml",
+    "uimessage1": "\u001b[36;1mDigital Academy training.\u001b[0m"
+  },
+  "backend": {
+    "imageid": "docker-direct"
+  }
+}
