@@ -32,6 +32,11 @@
       "course_id": "module-6",
       "title": "Kubernetes CNCF: Module 6 - KNative Getting Started",
       "description": "In this lab, we will learn about how to use KNative."
+    },
+    {
+      "course_id": "module-7",
+      "title": "Kubernetes CNCF: Module 7 - Leveraging Open Policy Agent",
+      "description": "In this lab, we will learn about the Open Policy Agent and how to set policies."
     }
   ]
 }

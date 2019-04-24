@@ -1,0 +1,50 @@
+{
+  "title": "Module 7 - Leveraging Open Policy Agent",
+  "description": "In this lab, we will learn about the Open Policy Agent and how to set policies.",
+  "difficulty": "beginner",
+  "time": "10-15 minutes",
+  "details": {
+    "assets": {
+      "host01": [
+        {
+          "file": "answers/*",
+          "target": "/.answers"
+        },
+        {
+          "file": "resources/*",
+          "target": "/root/newresources"
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": "Constraint Template",
+        "text": "step1.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh",
+      "credits": "Developer(s): [William Hearn](https://sylus.ca)",
+      "courseData": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "uilayout": "terminal",
+    "dashboards": [
+      {
+        "name": "Dashboard",
+        "href": "https://[[HOST_SUBDOMAIN]]-30000-[[KATACODA_HOST]].environments.katacoda.com"
+      }
+    ],
+    "uisettings": "yaml",
+    "uimessage1": "\u001b[36;1mDigital Academy training.\u001b[0m"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running"
+  }
+}
