@@ -1,6 +1,6 @@
 {
   "title": "Kubernetes Fundamentals",
-  "description": "Presented by the Digital Academy - A high level overview of Kubernetes.",
+  "description": "Presented by the Digital Academy - Basic concepts such as Pods, replicas, and different types of Deployment strategies.",
   "icon": "fa-kubernetes",
   "courses": [
     {
