@@ -1,6 +1,6 @@
 {
-  "title": "Module 6 - Getting Started with Istio",
-  "description": "In this lab, we will learn about how to use the Istio Service Mesh",
+  "title": "Module 6 - KNative Getting Started",
+  "description": "In this lab, we will learn about how to use KNative.",
   "difficulty": "beginner",
   "time": "10-15 minutes",
   "details": {

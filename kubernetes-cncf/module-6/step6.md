@@ -1,3 +1,3 @@
 Delete the application using the same YAML resource.
 
-`kubectl delete --filename https://raw.githubusercontent.com/knative/docs/master/serving/samples/helloworld-go/service.yaml`{{execute}}
+`kubectl delete -f https://raw.githubusercontent.com/sylus/helloworld-go/master/service.yaml`{{execute}}

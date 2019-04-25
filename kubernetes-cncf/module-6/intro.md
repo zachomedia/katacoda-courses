@@ -4,20 +4,22 @@ Welcome to the Digital Academy "Kubernetes CNCF" series. This is Module 6 - Depl
 
 ![Knative](/sylus/courses/kubernetes-cncf/module-6/assets/knative-logo.png "Build, deploy, and manage modern serverless workloads.")
 
-Knative is a Kubernetes-based platform to build, deploy, and manage modern serverless workloads. It drives with three primary features:
+Knative is a Kubernetes-based platform to build, deploy, and manage modern serverless workloads.
 
-|   |   |
-|---|---|
+There are currently 3 discrete logical components:
+
+|             |                                             |
+|-------------|---------------------------------------------|
 | **Serving** | Scale to zero, request-driven compute model |
 | **Build**   | Cloud-native source to container orchestration |
 | **Events**  | Universal subscription, delivery and management of events |
 
-> [Knative](https://github.com/knative/docs) (pronounced kay-nay-tiv) extends Kubernetes to provide a set of middleware components that are essential to build modern, source-centric, and container-based applications that can run anywhere: on premises, in the cloud, or even in a third-party data center.
+> [Knative](https://github.com/knative/docs) extends Kubernetes to provide a set of middleware components that are essential to build modern, source-centric, and container-based applications that can run anywhere: on premises, in the cloud, or even on a third-party data center.
 
-> Each of the components under the Knative project attempt to identify common patterns and codify the best practices that are shared by successful real-world Kubernetes-based frameworks and applications. Knative components focus on solving many mundane but difficult tasks such as:
+> Each of the components under the Knative project attempt to identify common patterns and codify the best practices that are shared by successful real-world Kubernetes-based frameworks and applications. Knative components focus on solving many of the mundane yet difficult tasks which include:
 
 > - Deploying a container
-> - Orchestrating source-to-URL workflows on Kubernetes
+> - Orchestrating source to URL workflows on Kubernetes
 > - Routing and managing traffic with blue/green deployment
 > - Automatic scaling and sizing workloads based on demand
 > - Binding running services to eventing ecosystems]()
@@ -33,7 +35,7 @@ There are a set of helpful solutions that allow serverless functions to run:
 
 In the following steps you will learn:
 
-- how to install Knative Kubernetes,
-- how to install and invoke function on Knative.
+- How to install Istio and leverage Knative serving component on Kubernetes,
+- How to install and invoke function(s) on Knative.
 
-More about the Knative and Istio architecture is described in the [documentation](https://github.com/knative/docs).
+The Knative and Istio architecture is fully described in the [official docs](https://github.com/knative/docs).
