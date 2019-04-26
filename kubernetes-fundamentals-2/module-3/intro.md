@@ -11,3 +11,9 @@ Secrets allow you to independently store sensitive data that your application ne
 Kubernetes Secrets can store simple values like usernames and passwords. They can also store credentials to access a Docker registry, OAuth tokens, and SSH keys. In general, if there is some type of secret value you need to provide, regardless of the content, you can store it as a literal value and make sure your application can consume it without using a built-in construct.
 
 We will go through the process of creating Secrets from literal values and files. We'll supply these values to Pods as environment variables and directories.
+
+For more information, see the Kubernetes [documentation][docs].
+
+<!-- Links Referenced -->
+
+[docs]:           https://kubernetes.io/docs/concepts/configuration/secret/

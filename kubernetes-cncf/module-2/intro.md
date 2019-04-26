@@ -14,3 +14,9 @@ Velero consists of:
 - A command-line client that runs locally
 
 For more information, [the documentation](https://heptio.github.io/velero/v0.11.0/) provides a getting started guide, plus information about building from source, architecture, extending Velero, and more.
+
+For more information, see the Velero [documentation][docs].
+
+<!-- Links Referenced -->
+
+[docs]:           https://github.com/heptio/velero

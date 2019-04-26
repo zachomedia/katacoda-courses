@@ -16,3 +16,9 @@ In the following steps you will learn:
 - How to update a chart.
 
 More details can be found on their [website](http://www.helm.sh/).
+
+For more information, see the Helm [documentation][docs].
+
+<!-- Links Referenced -->
+
+[docs]:           https://helm.sh

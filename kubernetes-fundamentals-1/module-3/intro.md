@@ -28,3 +28,9 @@ In this exercise, we explore file based pod specification and creation.
 
 Understanding how a pod works will him you debig issues when they arrive.
 In this lab we will explore the Pod lifecycle, networking, and configuration.
+
+For more information, see the Kubernetes [documentation][docs].
+
+<!-- Links Referenced -->
+
+[docs]:           https://kubernetes.io/docs/concepts/workloads/pods/pod/

@@ -8,3 +8,9 @@ In this lab, we will introduce you to the Kubernetes Architecture. In particular
 - The Kubeconfig file
 - Logging
 - Accessing the API
+
+For more information, see the Kubernetes [documentation][docs].
+
+<!-- Links Referenced -->
+
+[docs]:           https://kubernetes.io/docs/concepts/architecture/

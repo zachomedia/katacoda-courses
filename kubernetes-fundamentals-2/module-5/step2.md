@@ -1,6 +1,6 @@
-Now that we have an ingress controller, let's use it.
+Now that we have an ingress controller, let's make use of it.
 
-Remember that vote app we used earlier? Let's use it again
+Remember that vote app we introduced in an earlier module? Let's use it again:
 
 `git clone https://github.com/dockersamples/example-voting-app.git`{{execute}}
 
@@ -23,6 +23,8 @@ Let's create an ingress record for the vote service:
 We should now see the ingress listed:
 
 `kubectl -n vote get ingress`{{execute}}
+
+> Note: Reminder that we need to make use of the namespace we created the app in.
 
 ## Test the ingress
 

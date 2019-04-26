@@ -35,3 +35,9 @@ Elasticsearch is a search engine based on the Lucene library. It provides a dist
 For Kubernetes there are a wide variety of ways to assemble EFK together, especially with a production or business critical clusters. Some solutions may leverage an ElasticSearch service outside the cluster, perhaps offered by a cloud provider. For any solution that's deployed to Kubernetes it's recommended to use Helm charts. Even with Helm charts there are a variety of solutions evolving and competing with each other.
 
 However, this scenario is aimed to show how you can get a working stack up with reasonable ease so you can see how the components are installed and work with each other.
+
+For more information, see the EFK [documentation][docs].
+
+<!-- Links Referenced -->
+
+[docs]:           https://www.digitalocean.com/community/tutorials/how-to-set-up-an-elasticsearch-fluentd-and-kibana-efk-logging-stack-on-kubernetes

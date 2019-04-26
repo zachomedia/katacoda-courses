@@ -8,6 +8,8 @@ An ingress controller provides an HTTP gateway to applications in the cluster. W
 >
 > It also lets us do more complicated request routing without having to add it to our application.
 
+![Traefik Logo](/sylus/courses/kubernetes-fundamentals-2/module-5/assets/traefik.png)
+
 Remember all that magic from earlier? We deployed [Traefik](https://traefik.io) to your cluster. It's a Kubernetes ingress controller, designed for the cloud. Other options include:
 
 - Nginx ingress controller

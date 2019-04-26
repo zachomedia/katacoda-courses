@@ -39,3 +39,9 @@ In the following steps you will learn:
 - How to install and invoke function(s) on Knative.
 
 The Knative and Istio architecture is fully described in the [official docs](https://github.com/knative/docs).
+
+For more information, see the KNative [documentation][docs].
+
+<!-- Links Referenced -->
+
+[docs]:           https://github.com/knative/docs

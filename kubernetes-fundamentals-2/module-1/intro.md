@@ -9,3 +9,9 @@ We'll cover the following topics:
 - ClusterIP
 - NodePort
 - Pod-to-Pod communication
+
+For more information, see the Kubernetes [documentation][docs].
+
+<!-- Links Referenced -->
+
+[docs]:           https://kubernetes.io/docs/concepts/services-networking/service/
