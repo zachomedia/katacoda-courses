@@ -1,0 +1,21 @@
+{
+  "title": "All Docker, Kubernetes, and CNCF labs",
+  "description": "Presented by the Digital Academy - All Docker, Kubernetes, and CNCF labs.",
+  "icon": "fa-kubernetes",
+  "courses": [
+    {
+      "pathway_id": "sylus",
+      "id": "conainer-basics/module-1",
+      "course_id": "module-1",
+      "title": "Container Basics: Module 1 - Docker Basics",
+      "description": "In this lab, we will examine the Docker CLI and execute our first container."
+    },
+    {
+      "pathway_id": "sylus",
+      "id": "kubernetes-fundamentals-1/module-1",
+      "course_id": "module-1",
+      "title": "Kubernetes Fundamentals: Module 1: Kubernetes Overview",
+      "description": "In this lab, we will demonstrate how Kubernetes can deploy containers and complex apps."
+    }
+  ]
+}
