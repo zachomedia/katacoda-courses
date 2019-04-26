@@ -12,10 +12,136 @@
     },
     {
       "pathway_id": "sylus",
+      "id": "container-basics/module-2",
+      "course_id": "module-2",
+      "title": "Container Basics: Module 2 - Creating custom images",
+      "description": "In this lab, we will learn to create our own containers with Docker."
+    },
+    {
+      "pathway_id": "sylus",
+      "id": "kubernetes-fundamentals-1/module-1",
+      "course_id": "module-1",
+      "title": "Kubernetes Fundamentals: Module 1: Kubernetes Overview",
+      "description": "In this lab, we will demonstrate how Kubernetes can deploy containers and complex apps."
+    },
+    {
+      "pathway_id": "sylus",
       "id": "kubernetes-fundamentals-1/module-2",
       "course_id": "module-2",
       "title": "Kubernetes Fundamentals: Module 2: Kubernetes Architecture",
       "description": "In this lab, we will introduce you to the Kubernetes Architecture."
+    },
+    {
+      "pathway_id": "sylus",
+      "id": "kubernetes-fundamentals-1/module-3",
+      "course_id": "module-3",
+      "title": "Kubernetes Fundamentals: Module 3 - Introduction to Pods",
+      "description": "In this lab, we will examine how to run containers in Pods."
+    },
+    {
+      "pathway_id": "sylus",
+      "id": "kubernetes-fundamentals-1/module-4",
+      "course_id": "module-4",
+      "title": "Kubernetes Fundamentals: Module 4 - Introduction to Deployments",
+      "description": "In this lab, we will explain the concept of ReplicaSets and Deployments."
+    },
+    {
+      "pathway_id": "sylus",
+      "id": "kubernetes-fundamentals-1/module-5",
+      "course_id": "module-5",
+      "title": "Kubernetes Fundamentals: Module 5 - Deployment Types",
+      "description": "In this lab, we will examine how to run Pods using different deployment types."
+    },
+    {
+      "pathway_id": "sylus",
+      "id": "kubernetes-fundamentals-1/module-6",
+      "course_id": "module-6",
+      "title": "Kubernetes Fundamentals: Module 6 - Review Fundamentals",
+      "description": "In this lab, let's cover everything we learned in Kubernetes Fundamentals."
+    },
+    {
+      "pathway_id": "sylus",
+      "id": "kubernetes-fundamentals-2/module-1",
+      "course_id": "module-1",
+      "title": "Kubernetes Fundamentals 2: Module 1 - Introduction to Services",
+      "description": "In this lab, we will learn how Kubernetes Services provide access to Pods and Deployments."
+    },
+    {
+      "pathway_id": "sylus",
+      "id": "kubernetes-fundamentals-2/module-2",
+      "course_id": "module-2",
+      "title": "Kubernetes Fundamentals 2: Module 2 - Introduction to ConfigMaps",
+      "description": "In this lab, we will decouple configuration from applications with Kubernetes ConfigMaps."
+    },
+    {
+      "pathway_id": "sylus",
+      "id": "kubernetes-fundamentals-2/module-3",
+      "course_id": "module-3",
+      "title": "Kubernetes Fundamentals 2: Module 3 - Introduction to Secrets",
+      "description": "In this lab, we will deploy sensitive information to Pods with Kubernetes Secrets."
+    },
+    {
+      "pathway_id": "sylus",
+      "id": "kubernetes-fundamentals-2/module-4",
+      "course_id": "module-4",
+      "title": "Kubernetes Fundamentals 2: Module 4 - Introduction to Persistent Volumes",
+      "description": "In this lab, we will create PersistentVolumes, and provide them to Pods via PersistentVolumeClaims."
+    },
+    {
+      "pathway_id": "sylus",
+      "id": "kubernetes-fundamentals-2/module-5",
+      "course_id": "module-5",
+      "title": "Kubernetes Fundamentals 2: Module 5 - Introduction to Ingresses",
+      "description": "In this lab, we will learn about a higher level of abstraction of Kubernetes Services."
+    },
+    {
+      "pathway_id": "sylus",
+      "id": "kubernetes-cncf/module-1",
+      "course_id": "module-1",
+      "title": "Kubernetes CNCF: Module 1 - Helm",
+      "description": "In this lab, we will learn about how to use Helm the package manager for Kubernetes."
+    },
+    {
+      "pathway_id": "sylus",
+      "id": "kubernetes-cncf/module-2",
+      "course_id": "module-2",
+      "title": "Kubernetes CNCF: Module 2 - Heptio Velero",
+      "description": "In this lab, we will learn how to manage disaster recovery for your Kubernetes cluster resources and persistent volumes."
+    },
+    {
+      "pathway_id": "sylus",
+      "id": "kubernetes-cncf/module-3",
+      "course_id": "module-3",
+      "title": "Kubernetes CNCF: Module 3 - Prometheus Getting Started",
+      "description": "In this lab, we will learn how to start collecting system metrics with Prometheus."
+    },
+    {
+      "pathway_id": "sylus",
+      "id": "kubernetes-cncf/module-4",
+      "course_id": "module-4",
+      "title": "Kubernetes CNCF: Module 4 - Logging with EFK",
+      "description": "In this lab, we will learn how to implement centralized logging using an ElasticsSearch, Fluent Bit, and Kibana (EFK) stack on Kubernetes."
+    },
+    {
+      "pathway_id": "sylus",
+      "id": "kubernetes-cncf/module-5",
+      "course_id": "module-5",
+      "title": "Kubernetes CNCF: Module 5 - Istio Getting Started",
+      "description": "In this lab, we will learn about how to use the Istio Service Mesh."
+    },
+    {
+      "pathway_id": "sylus",
+      "id": "kubernetes-cncf/module-6",
+      "course_id": "module-6",
+      "title": "Kubernetes CNCF: Module 6 - KNative Getting Started",
+      "description": "In this lab, we will learn about how to use KNative."
+    },
+    {
+      "pathway_id": "sylus",
+      "id": "kubernetes-cncf/module-7",
+      "course_id": "module-7",
+      "title": "Kubernetes CNCF: Module 7 - Leveraging Open Policy Agent",
+      "description": "In this lab, we will learn about the Open Policy Agent and how to set policies."
     }
   ]
 }
