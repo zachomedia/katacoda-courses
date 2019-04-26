@@ -1,32 +1,6 @@
 Now that we've gotten a good taste of creating our own Deployments, its time to use the rolling update and rollback features.
 
-First, let's all start off with a fully configured NGiNX Deployment, located at `./resources/nginx.yaml`
-
-Here are the file contents:
-
-```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: nginx-deployment
-  labels:
-    app: nginx
-spec:
-  replicas: 5
-  selector:
-    matchLabels:
-      app: nginx
-  template:
-    metadata:
-      labels:
-        app: nginx
-    spec:
-      containers:
-      - name: nginx
-        image: nginx:1.8.1
-        ports:
-        - containerPort: 80
-```
+First, let's all start off with a fully configured Nginx Deployment, located at `./resources/nginx.yaml`
 
 For our ReplicaSet, we can configure a `strategy` that defines how to safely perform a rolling update.
 
@@ -81,20 +55,7 @@ We can see that the Pods are being updated one at a time. If we look at the Depl
 
 `kubectl describe deployment nginx-deployment`{{execute}}
 
-```
-Type    Reason             Age   From                   Message
-  ----    ------             ----  ----                   -------
-  Normal  ScalingReplicaSet  1m    deployment-controller  Scaled up replica set nginx-deployment-555958bc44 to 1
-  Normal  ScalingReplicaSet  1m    deployment-controller  Scaled down replica set nginx-deployment-67594d6bf6 to 3
-  Normal  ScalingReplicaSet  1m    deployment-controller  Scaled up replica set nginx-deployment-555958bc44 to 2
-  Normal  ScalingReplicaSet  1m    deployment-controller  Scaled down replica set nginx-deployment-67594d6bf6 to 2
-  Normal  ScalingReplicaSet  1m    deployment-controller  Scaled up replica set nginx-deployment-555958bc44 to 3
-  Normal  ScalingReplicaSet  1m    deployment-controller  Scaled down replica set nginx-deployment-67594d6bf6 to 1
-  Normal  ScalingReplicaSet  1m    deployment-controller  Scaled up replica set nginx-deployment-555958bc44 to 4
-  Normal  ScalingReplicaSet  1m    deployment-controller  Scaled down replica set nginx-deployment-67594d6bf6 to 0
-```
-
-We can see that the Deployment scaled up RS for the new Pods, and then scaled down the old RS. These actions were done one at a time, as specified by our RollingUpdate configuration.
+We can see that the Deployment scaled up ReplicaSet for the new Pods, and then scaled down the old ReplicaSet. These actions were done one at a time, as specified by our RollingUpdate configuration.
 
 We can now get our Deployment rollout history:
 
@@ -103,7 +64,3 @@ We can now get our Deployment rollout history:
 We can jump back a version:
 
 `kubectl rollout undo deployment.v1.apps/nginx-deployment`{{execute}}
-
-Or we can jump back to a specific version:
-
-`kubectl rollout undo deployment.v1.apps/nginx-deployment --to-revision=X`, where X is the version you want to rollback to

@@ -38,7 +38,7 @@
         "text": "step5.md"
       },
       {
-        "title": "Configuring NGiNX",
+        "title": "Configuring Nginx",
         "text": "step6.md"
       },
       {
@@ -67,10 +67,6 @@
       {
         "name": "Vue.js",
         "href": "https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com"
-      },
-      {
-        "name": "Minecraft",
-        "href": "https://[[HOST_SUBDOMAIN]]-25565-[[KATACODA_HOST]].environments.katacoda.com"
       }
     ],
     "uisettings": "yaml",

@@ -16,7 +16,7 @@ What values should we put in for each of these?
 1. `apiVersion: apps/v1`
 2. `kind: Deployment`
 3. `metadata`? We need to apply a `name` and `labels`, let's say `app=vue`
-4. `spec` is a complex component, where we need to configure our RS and Pod
+4. `spec` is a complex component, where we need to configure our ReplicaSet and Pod
 
 We should have something similar to this:
 
@@ -30,7 +30,7 @@ metadata:
 spec:
 ```
 
-Next, let's add the scaffolding required to configure the RS and Pods:
+Next, let's add the scaffolding required to configure the ReplicaSet and Pods:
 
 ```yaml
 apiVersion: apps/v1
@@ -40,7 +40,7 @@ metadata:
   labels:
     app: vue
 spec:
-  # RS config goes here
+  # ReplicaSet config goes here
   template:
     metadata:
 
@@ -48,12 +48,12 @@ spec:
       containers:
 ```
 
-Now that we've got the scaffolding, let's configure the RS
+Now that we've got the scaffolding, let's configure the ReplicaSet
 
 1. We need to set the number of `replicas`
 2. We need to configure a `selector` to `matchLabels`
 
-Let's stick with 3 replicas. Remember, we need the RS To match labels on the Pod.
+Let's stick with 3 replicas. Remember, we need the ReplicaSet To match labels on the Pod.
 
 ```yaml
 apiVersion: apps/v1
@@ -74,7 +74,7 @@ spec:
       containers:
 ```
 
-Now we need to give the Pods the appropriate labels so the RS will match with it. In addition, let's configure the containers.
+Now we need to give the Pods the appropriate labels so the ReplicaSet will match with it. In addition, let's configure the containers.
 
 1. We need to apply the label `app=vue` to the Pod
 2. We need a single container, let's call it `vue`
