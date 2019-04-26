@@ -1,6 +1,6 @@
-Right now, we have a Kubernetes cluster running.
+We now have a Kubernetes cluster running. Yay!
 
-The cluster can be interacted with using the kubectl CLI. This is the primary approach for managing Kubernetes and the applications running on top of the cluster.
+We can interact with the cluster using the kubectl command line tool (CLI). This is the primary approach for managing Kubernetes and the applications running on top of the cluster.
 
 1) Retrieve information about our cluster:
 
@@ -23,4 +23,4 @@ The cluster can be interacted with using the kubectl CLI. This is the primary ap
 `ssh node01`{{execute}}
 
 However, we will be managing our Kubernetes cluster from the master, so exit
-the SSH connection by typing `exit`.
+the SSH connection by typing `exit`{{execute}}.

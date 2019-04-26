@@ -11,15 +11,16 @@ The status of the deployment can be discovered via viewing the running Pods.
 
 `kubectl get pods`{{execute}}
 
-Once the container is running, it can be exposed via different networking
-options, depending on requirements. One possible solution is NodePort, that
-provides a dynamic port on the host to a container. What this command does is
-create iptables rules to route traffic that hits a specific port on the host to
-the container that we deployed.
+There are many ways to access the pod from outside the cluster. We can use
+`NodePort` to expose a running pod via a dynamically assigned port on the
+Kubernetes node.
 
 `kubectl expose deployment first-deployment --port=80 --type=NodePort`{{execute}}
 
-The command below finds the allocated port and executes a HTTP request.
+> *How does this work?* This will create an `iptables` (Linux firewall) entry to redirect
+  incomming traffic on that port to the pod.
+
+The command below finds the allocated port and performs a HTTP request.
 
 `export PORT=$(kubectl get svc first-deployment -o go-template='{{range.spec.ports}}{{if .nodePort}}{{.nodePort}}{{"\n"}}{{end}}{{end}}')
 echo "Accessing master:$PORT"
