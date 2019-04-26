@@ -20,6 +20,10 @@
       {
         "title": "Your first Dockerfile",
         "text": "step1.md"
+      },
+      {
+        "title": "Multi-stage Dockerfiles",
+        "text": "step2.md"
       }
     ],
     "intro": {
