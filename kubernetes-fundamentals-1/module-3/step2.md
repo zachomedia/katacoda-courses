@@ -2,9 +2,9 @@ Issuing commands directly from the command line is great for quick inspection, b
 
 Like all Kubernetes objects, Pods can be described with either YAML or JSON syntax. Kubernetes provides easier to use YAML to describe objects, but uses the JSON format internally for all objects.
 
-**Remember, YAML is extremely sensitive to spacing**
+> **Remember, YAML is extremely sensitive to spacing**
 
-Here is an example of a simple NGiNX pod in both formats:
+Here is an example of a simple NGINX pod in both formats:
 
 #### JSON
 
@@ -74,19 +74,11 @@ If you started a new Pod, delete the pod with `kubectl delete pod nginx`{{execut
 
 ## Create a Pod specification file
 
-Now, we will create our own PodSpec file. Let's start out with `./resources/vue-blank.yaml`.
-
-Here is how we want to configure our Pod:
-
-Let's configure our Pod to be called `vue`, include the label `app=vue`, with a single container named `vue` that runs the `vue/hello-world` image, and listen on `port 80`.
-
-Open up `./resources/vue-blank.yaml` with vim or a text editor on your host, and we'll fill this in together.
-
-Generally you will want to launch pods into your K8S cluster from a file, since infrastructure as code promotes transparency and reproducibily.
+Open `resources/vue-complete.yaml` in the editor. It defines a pod called `vue`, with one container.
 
 Now that we've got our PodSpec, let's create a Pod from it:
 
-`kubectl create -f ./resources/vue-blank.yaml`{{execute}}
+`kubectl apply -f ./resources/vue-complete.yaml`{{execute}}
 
 Verify that the new Vue.js pod is running:
 
@@ -96,15 +88,11 @@ We can also inspect the Pod:
 
 `kubectl describe pod vue`{{execute}}
 
-What is the Pod's IP address? What host is it running on?
-
 ## Configure Pods
 
 Of course, this isn't all we can do with a PodSpec file, there is a lot that we can configure.
 
-First, let's all start off the same page, and open up `./resources/vue-complete.yaml` with your editor.
-
-Now, the first thing we'll do is configure a default command to launch the container with. We do that with `command`. For example, what do you think this does?
+With `resources/vue-complete.yaml` open in your editor, let's add a default command. Add the `command` entry under `image`:
 
 `command: ['sh', '-c', 'echo $(env) && sleep 3600']`
 
@@ -121,12 +109,12 @@ spec:
   containers:
   - name: vue
     image: vue/hello-world
+    command: ['sh', '-c', 'echo $(env) && sleep 3600']
     ports:
     - containerPort: 80
-    command: ['sh', '-c', 'echo $(env) && sleep 3600']
 ```
 
-If we were to use `kubectl apply -f` to update this Pod, it would output the environment variables in the container.
+We can run `kubectl apply -f resources/vue-complete.yaml`{{execute}} to update this pod. Because certain fields can't be changed after the pod is created, you'll have to remove the pod first (`kubectl delete -f resources/vue-complete.yaml`). This won't be a problem after we learn about deployments.
 
 Next, we'll configure environment variables. In Kubernetes, you do this with `env`, specifically:
 
@@ -227,8 +215,4 @@ spec:
     emptyDir: {}
 ```
 
-This will limit our Pod to using only 50% of a single CPU core, and no more than 128 Megabytes of RAM.
-
-Finally, we can configure our Pod to listen on a particular port. We actually saw this initially when we created the PodSpec for the first time.
-
-Now that we've configured the Pod, how do we create it, list the Pods, and inspect this Pod?
+This will limit our pod to using only 50% of a single CPU core, and no more than 128 Megabytes of RAM. If it tries to use more, Kubernetes will terminate the pod.
