@@ -18,8 +18,16 @@
     },
     "steps": [
       {
-        "title": "Local Volumes",
+        "title": "Ingress controllers",
         "text": "step1.md"
+      },
+      {
+        "title": "Creating ingresses",
+        "text": "step2.md"
+      },
+      {
+        "title": "Creating another ingress",
+        "text": "step3.md"
       }
     ],
     "intro": {
