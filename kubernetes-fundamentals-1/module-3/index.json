@@ -2,7 +2,7 @@
   "title": "Module 3 - Intro to Pods",
   "description": "In this lab, we will examine how to run containers in Pods.",
   "difficulty": "beginner",
-  "time": "45-60 minutes",
+  "time": "20-30 minutes",
   "details": {
     "assets": {
       "host01": [
@@ -30,7 +30,7 @@
         "text": "step3.md"
       },
       {
-        "title": "Configuring NGiNX",
+        "title": "Configuring NGINX",
         "text": "step4.md"
       },
       {
@@ -40,10 +40,6 @@
       {
         "title": "Sharing Volumes",
         "text": "step6.md"
-      },
-      {
-        "title": "Pod IPC",
-        "text": "step7.md"
       }
     ],
     "intro": {

@@ -58,7 +58,7 @@
   },
   "environment": {
     "showdashboard": true,
-    "uilayout": "terminal",
+    "uilayout": "editor-terminal",
     "dashboards": [
       {
         "name": "Dashboard",

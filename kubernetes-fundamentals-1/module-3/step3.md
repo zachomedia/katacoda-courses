@@ -21,9 +21,3 @@ When you really need to debug a problem, this is how you will do it.
 Use `exit` to exit the shell running in the pod.
 
 *NOTE*: -t and -i, they specify interactive and allocate a TTY
-
-How does this compare to performing the process with Docker?
-
-Who can help me:
-1. Find out where the Pod is running
-2. Get the IP address of our Pod

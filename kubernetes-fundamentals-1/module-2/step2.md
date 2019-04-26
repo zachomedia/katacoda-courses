@@ -1,35 +1,32 @@
-When you first install Kubernetes, you need to create a `kubeconfig` file to access the cluster. This file defines your user account information, including which namespaces and other cluster resources you have access to.
+When you first install Kubernetes, you will need a `kubeconfig` file to access the cluster.  This file indicates how to connect to the API server, and which credential to use when authenticating.
 
-It is generally stored in `~/.kube/config`, although you can pass it to the CLI with an argument.
+It is typically stored in `~/.kube/config`, but can also be defined as a command line argument or the `KUBECONFIG` environment variable.
 
 Let's view our `kubeconfig` file:
 
 `cat ~/.kube/config`{{execute}}
 
-```
-apiVersion: v1
-clusters:
-- cluster:
-    certificate-authority-data: LS0tLS1CRUdJT...
-    server: https://172.17.0.70:6443
-  name: kubernetes
-contexts:
-- context:
-    cluster: kubernetes
-    user: kubernetes-admin
-  name: kubernetes-admin@kubernetes
-current-context: kubernetes-admin@kubernetes
-kind: Config
-preferences: {}
-users:
-- name: kubernetes-admin
-  user:
-    client-certificate-data: LS0tLS1CRUdJT...
-    client-key-data: LS0tLS1CRUdJTiBSU0...
-```
+## Structure of Kubeconfig
 
-The first part defines the cluster this config file provides access to, including IP address and the cluster's CA.
+### `clusters`
 
-The second part defines the cluster user, including name, role, certificates and private key.
+This section defines the Kubernetes cluster. It indicates the URL to access the API server and the SSL certificate for validation.
 
-When you provision access to your cluster for other users or Continuous Integration, each user will have their own kubeconfig file defining their access.
+> Often in Kubernetes YAML configuration, you will find values are Base64 encoded. This allows arbitrary data to be represented in plain text.
+
+### `users`
+
+This sections defines authentication credentials to use with the cluster.
+
+In the kubeconfig of the demo environment, we are authentication using a SSL certificate. Other authentication methods, depending on the cluster, include:
+
+- Tokens
+- OAuth (allows authentication agains Active Directory, GitHub, Google, etc.)
+
+### `contexts`
+
+The contexts section link clusters definition and user definitions together.
+
+The `kubectl` command line tool operates on these contexts objects.
+
+> We only have one user, cluster and context defined in this file. It is possible to define multiple of each in a given `kubeconfig` file.

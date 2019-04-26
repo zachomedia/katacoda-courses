@@ -15,17 +15,13 @@ To create a simple Kubernetes deployment from the command-line:
 
 `kubectl run vue --image=sylus/vue-hello-world --port 80`{{execute}}
 
-Congrats, you have just created your first Deployment. The `run` command created a Deplyment which automatically performed a few things for you:
+Congrats, you have just created your first Deployment. The `run` command created a Deployment which automatically performed a few things for you:
 
-* Searched for a suitable node to run the pod
-* Scheduled the pod to run on that Node
+* Created a ReplicaSet which created a pod
+* The scheduler searched for a suitable node to run the pod and scheduled the pod to run on that Node
 * Configured the cluster to restart / reschedule the pod when needed
 
 Basically, it created all of the objects we defined, which include Pods and ReplicaSets. It scheduled the Pods on a node capable of accepting workloads.
-
-Let's think back, what is the difference between this command, and how we create Pods on the CLI?
-
-`--restatart=Never`
 
 To verify that the command created a Deployment:
 

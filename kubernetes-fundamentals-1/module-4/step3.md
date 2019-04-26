@@ -1,21 +1,8 @@
 The most effective and repeatable way to manage our Deployments is with Manifest files. Here is one that defines our simple vue application (`./resources/vue-simple.yaml`):
 
-```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: vue-deployment
-spec:
-  template:
-    spec:
-      containers:
-      - name: vue
-        image: sylus/vue-hello-world
-        ports:
-        - containerPort: 80
-```
+`cat resources/vue-simple.yaml`{{execute}}
 
-If we look at this Deployment, it looks very similar to our PodSpec and RS Manifests. We can add any configuration that we've already covered in the Pod section to this manifest. We should also configure the ReplicaSet to match our replication requirements.
+If we look at this Deployment, it looks very similar to our PodSpec and ReplicaSet Manifests. We can add any configuration that we've already covered in the Pod section to this manifest. We should also configure the ReplicaSet to match our replication requirements.
 
 Let's create our Deployment: `kubectl create -f ./resources/vue-simple.yaml`{{execute}}
 

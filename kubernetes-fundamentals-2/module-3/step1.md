@@ -31,4 +31,4 @@ We can get even more information with:
 
 Note that Kubernetes will not give us the values of the secrets, these are only provided to Pods at runtime in the form of directories and environment variables.
 
-The actual data is stored in Etcd, by default in Base 64 encoded form. This data can be encoded at rest, but that is beyond the scope of this lab. For more information, please see the Kubernetes [documentation](https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/).
+The actual data is stored in Etcd, by default in Base 64 encoded form. This data can be encrypted at rest, but that is beyond the scope of this lab. For more information, please see the Kubernetes [documentation](https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/).

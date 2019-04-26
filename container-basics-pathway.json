@@ -7,6 +7,11 @@
       "course_id": "module-1",
       "title": "Container Basics: Module 1 - Docker Basics",
       "description": "In this lab, we will examine the Docker CLI and execute our first container."
+    },
+    {
+      "course_id": "module-2",
+      "title": "Container Basics: Module 2 - Creating custom images",
+      "description": "In this lab, we will learn to create our own containers with Docker."
     }
   ]
 }

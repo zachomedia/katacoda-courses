@@ -1,11 +1,11 @@
 {
-  "title": "Module 4: Kubernetes Deployments",
-  "description": "In this lab, we will examine how to use basic Deployments.",
-  "difficulty": "Intermediate",
-  "time": "45-60 minutes",
+  "title": "Module 2 - Creating Images",
+  "description": "In this lab, we will learn to create our own images with Docker.",
+  "difficulty": "beginner",
+  "time": "10-15 minutes",
   "details": {
     "assets": {
-      "host01": [
+      "client": [
         {
           "file": "answers/*",
           "target": ".answers"
@@ -18,32 +18,16 @@
     },
     "steps": [
       {
-        "title": "ReplicaSets",
+        "title": "Your first Dockerfile",
         "text": "step1.md"
       },
       {
-        "title": "Deployments on the CLI",
+        "title": "More about building images",
         "text": "step2.md"
       },
       {
-        "title": "Deployment Manifests",
+        "title": "Multi-stage Dockerfile",
         "text": "step3.md"
-      },
-      {
-        "title": "Interacting with Deployments",
-        "text": "step4.md"
-      },
-      {
-        "title": "Configuring Vue.js Hello World",
-        "text": "step5.md"
-      },
-      {
-        "title": "Configuring Nginx",
-        "text": "step6.md"
-      },
-      {
-        "title": "Rolling Updates and Rollbacks",
-        "text": "step7.md"
       }
     ],
     "intro": {
@@ -61,18 +45,14 @@
     "uilayout": "editor-terminal",
     "dashboards": [
       {
-        "name": "Dashboard",
-        "href": "https://[[HOST_SUBDOMAIN]]-30000-[[KATACODA_HOST]].environments.katacoda.com"
-      },
-      {
-        "name": "Vue.js",
+        "name": "Nginx",
         "href": "https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com"
       }
     ],
     "uisettings": "yaml",
     "uimessage1": "\u001b[36;1mDigital Academy training.\u001b[0m"
-    },
+  },
   "backend": {
-    "imageid": "kubernetes-cluster-running"
+    "imageid": "docker"
   }
 }

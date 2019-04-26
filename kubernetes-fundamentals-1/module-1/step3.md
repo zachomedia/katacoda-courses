@@ -16,4 +16,6 @@ Once the Pod is in a running state, we can view the dashboard using the link bel
 
 https://[[HOST_SUBDOMAIN]]-30000-[[KATACODA_HOST]].environments.katacoda.com/
 
-As you can see, the dashboard gives us a graphical view of our cluster. We can see all of the objects in the cluster, and actually schedule workloads. We won't be using the dashboard during these training sessions, but as you continue your Kubernetes learning journey, it is a great resource.
+As you can see, the dashboard gives us a graphical view of our cluster. We can see, edit, add and delete all objects in the cluster.
+
+> We won't be using the dashboard during these training sessions, but as you continue your Kubernetes learning journey, it is a great resource.

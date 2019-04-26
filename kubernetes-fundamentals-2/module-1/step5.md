@@ -65,7 +65,7 @@ This capability is extremely useful. We now have a deterministic way to have one
 
 ## Cleanup
 
-Exit the Pod with: the `exit` command.
+Exit the Pod with: the `exit`{{execute}} command.
 <!-- `exit`{{execute}} -->
 
 Make sure you delete all of the ClusterIP services with

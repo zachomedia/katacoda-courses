@@ -1,6 +1,6 @@
 # Shared Volumes
 
-In Kubernetes, you can use a shared Kubernetes Volume as a simple and efficient way to share data between containers in a Pod. For most cases, it is sufficient to use a directory on the host that is shared with all containers within a Pod. This means there will be a directory on the host mounted into containers in a single Pod. If the Pod goes down and is rescheduled on the same host, it will still have data in that shared volume.
+In Kubernetes, you can use a shared Kubernetes Volume as a simple and efficient way to share data between containers in a Pod. For most cases, it is sufficient to use a directory on the host that is shared with all containers within a Pod. This means there will be a directory on the host mounted into containers in a single Pod. If the Pod goes down, all data in that shared volume will be lost.
 
 Kubernetes Volumes enable data to survive container restarts, but these volumes have the same lifetime as the Pod. That means that the volume (and the data it holds) exists exactly as long as that Pod exists. If that Pod is deleted for any reason, even if an identical replacement is created, the shared Volume is also destroyed and created anew.
 
@@ -8,7 +8,7 @@ A standard use case for a multi-container Pod with a shared Volume is when one c
 
 Examine the file `./resources/pod-volume.yaml` in the file explorer.
 
-The 1st container runs NGiNX server. The container mounts the shared volume to the directory `/usr/share/nginx/html`.
+The 1st container runs Nginx server. The container mounts the shared volume to the directory `/usr/share/nginx/html`.
 
 The 2nd container uses a Debian image and mounts the shared volume to the container directory `/html`.
 

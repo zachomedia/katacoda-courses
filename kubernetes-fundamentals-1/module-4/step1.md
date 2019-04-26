@@ -1,32 +1,8 @@
 Before we work with Deployments, we'll go over the basics of ReplicaSets. A ReplicaSet will ensure that the desired number of replicas of each Pod are up and running. Any time a Pod goes down, the ReplicaSet will deploy a new one to maintain high availability.
 
-Now inspect the file `cat ./resources/vue-rs.yaml`{{execute}}.  
+Now inspect the file `cat ./resources/vue-rs.yaml`{{execute}}.
 
 It should look familiar to the `Pod` resource. We do have a few additions. These additions are what configure our ReplicaSet.
-
-```yaml
-apiVersion: apps/v1
-kind: ReplicaSet
-metadata:
-  name: vue-rs
-  labels:
-    app: vue
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: vue
-  template:
-    metadata:
-      labels:
-        app: vue
-    spec:
-      containers:
-      - name: vue
-        image: sylus/vue-hello-world
-        ports:
-        - containerPort: 80
-```
 
 The biggest additions are `replicas: 3` and `selector`. The first component configures the total number of replicas of the Pod should be active at all times. The `selector` matches a set of constraints to identify Pods to represent. In this case, the ReplicaSet will track Pods with the label `app=vue`.
 
