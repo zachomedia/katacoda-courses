@@ -1,6 +1,6 @@
 First, we need to deploy a simple HTTP Server that we'll then redirect traffic to with a Service.
 
-Our Deployment is located in `./resources/deployment.yaml`. 
+Our Deployment is located in `./resources/deployment.yaml`.
 
 ```yaml
 apiVersion: apps/v1
@@ -32,4 +32,4 @@ Now let's apply the deployment file in Kubernetes.
 
 We see the IP addresses of our Pods from the `kubectl get pods -o wide` command. You can access their content via `curl`.
 
-Note that each pod has its own unique IP address and ID. These are the pods local IPs on the worker node they are running on. These IPs are only accessible from the node they are running on. To expose pods to other services within the cluster, you need a ClusterIP. In the next step we will deploy a service that leverages the ClusterIP.
+Note that each pod has its own unique IP address and ID. These are the pods local IPs on the worker node they are running on. These IPs are typically only accessible from within the cluster. Their IP address will change when the pods are changed/recreated. To provide a stable way to access them from other pods in the cluster, we will create a service of type `ClusterIP`. In the next step we will deploy a service that leverages the ClusterIP.
