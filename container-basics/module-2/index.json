@@ -22,8 +22,12 @@
         "text": "step1.md"
       },
       {
-        "title": "Multi-stage Dockerfiles",
+        "title": "More about building images",
         "text": "step2.md"
+      },
+      {
+        "title": "Multi-stage Dockerfile",
+        "text": "step3.md"
       }
     ],
     "intro": {

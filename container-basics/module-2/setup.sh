@@ -13,6 +13,9 @@ rm -rf /root/newresources
 tar -xf /root/resources/simple.tgz -C /root/resources
 rm /root/resources/simple.tgz
 
+tar -xf /root/resources/buildyourown.tgz -C /root/resources
+rm /root/resources/buildyourown.tgz
+
 tar -xf /root/resources/multistage.tgz -C /root/resources
 rm /root/resources/multistage.tgz
 
