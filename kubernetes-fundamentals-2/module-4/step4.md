@@ -27,3 +27,7 @@ We can see that the Pod was created, and that the Claim was fulfilled:
 `kubectl get pods --watch`{{execute}}
 
 `kubectl get pvc`{{execute interrupt}}
+
+Delete all Kubernetes resources:
+
+`kubectl delete -f ./resources`{{execute}}

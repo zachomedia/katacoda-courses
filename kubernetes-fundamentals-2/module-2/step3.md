@@ -20,6 +20,6 @@ We can see it pulled in both sets of configuration:
 
 `kubectl describe configmap dir-config`{{execute}}
 
-And here's the content:
+And, view the ConfigMap:
 
 `kubectl get configmap dir-config -o yaml`{{execute}}

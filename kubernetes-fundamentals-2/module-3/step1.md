@@ -20,15 +20,10 @@ Now, we can view the secret with kubectl:
 
 `kubectl get secrets`{{execute}}
 
-```
-NAME                  TYPE                                  DATA      AGE
-login-credentials     Opaque                                2         51s
-```
-
 We can get even more information with:
 
-`kubectl describe secret login-credentials`{{execute}}
+`kubectl describe secret login-credentials -o yaml`{{execute}}
 
-Note that Kubernetes will not give us the values of the secrets, these are only provided to Pods at runtime in the form of directories and environment variables.
+> Note: Kubernetes will not give us the values of the secrets, these are only provided to Pods at runtime in the form of directories and environment variables.
 
 The actual data is stored in Etcd, by default in Base 64 encoded form. This data can be encrypted at rest, but that is beyond the scope of this lab. For more information, please see the Kubernetes [documentation](https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/).

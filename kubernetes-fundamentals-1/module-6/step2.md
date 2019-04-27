@@ -1,4 +1,4 @@
-Labels and Selectors are the bread and butter of Kubernetes. Labels are key=value pairs that are attached to Kubernetes objects. Selectors allow one object to manage one or more other objects that satisfy the selector.
+Labels and Selectors are the bread and butter of Kubernetes. Labels are `key=value` pairs that are attached to Kubernetes objects. Selectors allow one object to manage one or more other objects that satisfy the selector.
 
 For example, let's say that we want to deploy WordPress. We'll give the WordPress Pods a label of `app=wordpress`. Then, we'll set the ReplicaSet selector to manage Pods with a label `app=wordpress`.
 

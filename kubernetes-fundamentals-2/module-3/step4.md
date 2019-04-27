@@ -24,14 +24,14 @@ spec:
             key: password
 ```
 
-This is almost identical to how we did this with ConfigMaps. Now, we can create the pod:
+Now we can create the pod:
 
 `kubectl create -f ./resources/pod-env.yaml`{{execute}}
 
-Now, we can go into the Redis container from our Pod and check the environment variables:
+> Note: This is almost identical to how we did this with ConfigMaps.
+
+Now we can go into the Redis container from our Pod and check the environment variables:
 
 `kubectl -it exec redis-env sh`{{execute}}
 
 `env`{{execute}}
-
-We can see our environment variables as defined by the secrets we provided.

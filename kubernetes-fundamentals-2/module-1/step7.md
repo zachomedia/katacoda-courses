@@ -2,7 +2,7 @@ Next, we will deploy our Vue.js hello world application.
 
 ## Deployment
 
-Let's create our Deployment: 
+Let's create our Deployment:
 
 `kubectl create -f ./resources/vue.yaml`{{execute}}
 
@@ -10,7 +10,7 @@ Let's create our Deployment:
 
 Once you've deployed the Vue.js application, create a Service so it is reachable
 from the outside world. To do this, create a service, and verify that everything
-is working correctly. 
+is working correctly.
 
 > Note the port should be set to `8080`.
 

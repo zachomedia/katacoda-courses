@@ -1,4 +1,4 @@
-We can also provide a Pod with environment variables for all key=value pairs inside a ConfigMap. This is very useful if you use a single file to provide an entire application's configuration.
+We can also provide a Pod with environment variables for all `key=value` pairs inside a ConfigMap. This is very useful if you use a single file to provide an entire application's configuration.
 
 There is a very simple Pod YAML file located at `./resources/alpine-all-vars.yaml`. Here is the content:
 
@@ -25,7 +25,7 @@ We can execute this pod, and see the environment variable we defined:
 
 `kubectl logs alpine-all-vars`{{execute}}
 
-Notice, `redis-config` and `game-properties` are environment variables that contain the entire file contents. 
+Notice, `redis-config` and `game-properties` are environment variables that contain the entire file contents.
 
 What's more, we can even use environment variables inside of Pod commands if we define those environment variables via ConfigMaps.
 

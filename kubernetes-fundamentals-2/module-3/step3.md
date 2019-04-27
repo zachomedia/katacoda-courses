@@ -1,4 +1,9 @@
-Now that we have two sets of secrets, `login-credentials` and `secret-manifest`, we can deploy this data to Pods. This is done in a Manifest file. First, we'll deploy secrets as volumes within a Pod.
+Given that we now have two sets of secrets:
+
+* `login-credentials`
+* `secret-manifest`
+
+We can deploy this data to via a Manifest file. Consider the example below illustrating how to deploy secrets as volumes within a Pod.
 
 ```yaml
 apiVersion: v1
@@ -40,7 +45,7 @@ Now that we've created the pod, we can open up a bash shell:
 
 `kubectl exec -it redis-vol -- /bin/bash`{{execute}}
 
-Now, we can check out those secret files:
+Now, we can check out that those secret files exist in the container:
 
 `cat /etc/secrets/config/username`{{execute}}
 

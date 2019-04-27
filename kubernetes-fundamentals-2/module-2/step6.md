@@ -16,42 +16,7 @@ Next, we'll create a Pod that runs Redis, and provide the configuration via a Co
 
 Here is our YAML file:
 
-```yaml
-apiVersion: v1
-kind: Pod
-
-metadata:
-  name: redis
-
-spec:
-  containers:
-  - name: redis
-    image: redis
-    command: ["redis-server"]
-    args: ["/redis-master/redis.conf"]
-    env:
-      - name: MASTER
-        value: "true"
-    ports:
-    - containerPort: 6379
-    resources:
-          limits:
-            cpu: "0.5"
-    volumeMounts:
-    - mountPath: /redis-master-data
-      name: data
-    - mountPath: /redis-master
-      name: config
-  volumes:
-  - name: data
-    emptyDir: {}
-  - name: config
-    configMap:
-      name: redis-config
-      items:
-        - key: redis-config
-          path: redis.conf
-```
+`cat ./resources/redis.yaml`{{execute}}
 
 Now, we can run this pod:
 
