@@ -50,8 +50,12 @@
         "text": "step8.md"
       },
       {
-        "title": "More Container Examples",
+        "title": "Volumes",
         "text": "step9.md"
+      },
+      {
+        "title": "More Container Examples",
+        "text": "step10.md"
       }
     ],
     "intro": {
