@@ -41,25 +41,3 @@ Look for the Jenkins service in the namespace `jenkins`. The Jenkins portal can 
 https://[[HOST_SUBDOMAIN]]-31111-[[KATACODA_HOST]].environments.katacoda.com/
 
 In the `values-override.yaml` file is a list of defined plugins. Through the Jenkins dashboard observe those plugins are present.
-
-Here is an example test pipeline script that inspects environment variables and uses KubeCtl commands to manipulate Kubernetes. Create a pipeline in Jenkins, paste this script and build the pipeline.
-
-```
-node {
-  stage ('Inspections') {
-    sh('env > env.txt')
-    sh('cat env.txt')
-
-    sh('kubectl get secret quay -o yaml -n jenkins')
-
-    def quayUserName = sh(script:"kubectl get secret quay -n jenkins -o=jsonpath='{.data.username}' | base64 -d", returnStdout: true)
-    def quayPassword = sh(script:"kubectl get secret quay -n jenkins -o=jsonpath='{.data.password}' | base64 -d", returnStdout: true)
-
-    echo "Quay access: ${quayUserName} / ${quayPassword}"
-  }
-}
-```{{copy}}
-
-Click ^ on the above copy icon to copy this pipeline text to your clipboard, then paste into the configuration for the new pipeline.
-
-This pipeline will take a few minutes to startup and run. Through the Kubernetes dashboard observe how a new pod is created in the jenkins namespace by the Jenkins Kubernetes plugin. To verify this pipeline success, inspect the build's console output and verify at the end the "Quay access:" line reports the Quay secret credentials.
