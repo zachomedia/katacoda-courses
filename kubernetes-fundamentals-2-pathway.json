@@ -27,6 +27,11 @@
       "course_id": "module-5",
       "title": "Kubernetes Fundamentals 2: Module 5 - Introduction to Ingresses",
       "description": "In this lab, we will learn about a higher level of abstraction of Kubernetes Services."
+    },
+    {
+      "course_id": "module-6",
+      "title": "Module 6 - CI/CD pipeline with Jenkins and Kubernetes",
+      "description": "In this lab, we will learn learn how to run a simple CI/CD pipeline with Jenkins and Kubernetes."
     }
   ]
 }

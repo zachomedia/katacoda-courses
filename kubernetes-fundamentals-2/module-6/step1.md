@@ -1,10 +1,14 @@
-Kubernetes has a web-based dashboard UI giving visibility into the Kubernetes cluster. Deploy the dashboard.
+As you see, your Kubernetes cluster is started. Verify it's ready for your use.
 
-`kubectl apply -f ./resources/dashboard.yaml`{{execute}}
+`kubectl version && kubectl cluster-info && kubectl get nodes`{{execute}}
 
-The dashboard is deployed into the kube-system namespace. View the status of the deployment with
+Verify the Kubernetes cluster is empty.
 
-`kubectl get pods -n kube-system`{{execute}}
+`kubectl get deployments,pods,services`{{execute}}
+
+The [Helm](https://helm.sh/) package manager used for installing applications on Kubernetes is also available.
+
+`helm version`{{execute}}
 
 ## Kubernetes Dashboard
 

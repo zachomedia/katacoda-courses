@@ -96,6 +96,13 @@
     },
     {
       "pathway_id": "sylus",
+      "id": "kubernetes-fundamentals-2/module-6",
+      "course_id": "module-6",
+      "title": "Module 6 - CI/CD pipeline with Jenkins and Kubernetes",
+      "description": "In this lab, we will learn learn how to run a simple CI/CD pipeline with Jenkins and Kubernetes."
+    },
+    {
+      "pathway_id": "sylus",
       "id": "kubernetes-cncf/module-1",
       "course_id": "module-1",
       "title": "Kubernetes CNCF: Module 1 - Helm",
