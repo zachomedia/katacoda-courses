@@ -20,4 +20,4 @@ Remember all that magic from earlier? We deployed [Traefik](https://traefik.io) 
 
 ## Check that it's running
 
-Let's make sure Traefik is ready to go. Check the pod is running: `kubectl get pods -l release=traefik`{{execute}}
+Let's make sure Traefik is ready to go. Check the pod is running: `kubectl -n kube-system get pods -l release=traefik`{{execute}}

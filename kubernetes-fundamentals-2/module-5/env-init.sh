@@ -10,4 +10,4 @@ helm init --wait
 helm repo update
 
 # Install traefik
-helm install --name traefik --set serviceType=NodePort stable/traefik
+helm install --name traefik --namespace kube-system --set serviceType=NodePort stable/traefik
