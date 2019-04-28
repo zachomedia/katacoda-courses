@@ -1,0 +1,21 @@
+{
+  "title": "All Docker labs",
+  "description": "Presented by the Digital Academy - All Docker labs.",
+  "icon": "fa-docker",
+  "courses": [
+    {
+      "pathway_id": "sylus",
+      "id": "container-basics/module-1",
+      "course_id": "container-basics-module-1",
+      "title": "Container Basics: Module 1 - Docker Basics",
+      "description": "In this lab, we will examine the Docker CLI and execute our first container."
+    },
+    {
+      "pathway_id": "sylus",
+      "id": "container-basics/module-2",
+      "course_id": "container-basics-module-2",
+      "title": "Container Basics: Module 2 - Creating custom images",
+      "description": "In this lab, we will learn to create our own containers with Docker."
+    }
+  ]
+}
