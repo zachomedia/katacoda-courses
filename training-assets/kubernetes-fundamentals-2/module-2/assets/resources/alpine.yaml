@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+  name: alpine-test-pod
+spec:
+  containers:
+    - name: alpine-test
+      image: alpine
+      command: ["/bin/sh", "-c", "env"]
+      env:
+        - name: FIRST_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: person-config
+              key: name.first
+  restartPolicy: Never

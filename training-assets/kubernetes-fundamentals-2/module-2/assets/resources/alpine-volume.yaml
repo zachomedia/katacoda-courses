@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+  name: alpine-volume
+spec:
+  containers:
+    - name: alpine-test
+      image: alpine
+      command: ["/bin/sh", "-c", "cat /etc/config/game.properties"]
+      volumeMounts:
+      - name: configmap-volume
+        mountPath: /etc/config
+  volumes:
+    - name: configmap-volume
+      configMap:
+        name: dir-config
+  restartPolicy: Never
