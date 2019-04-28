@@ -18,5 +18,3 @@ rm /root/resources/buildyourown.tgz
 
 tar -xf /root/resources/multistage.tgz -C /root/resources
 rm /root/resources/multistage.tgz
-
-ln -s /root/resources /home/scrapbook/tutorial/resources

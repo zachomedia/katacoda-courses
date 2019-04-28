@@ -5,7 +5,7 @@
   "time": "10-15 minutes",
   "details": {
     "assets": {
-      "host01": [
+      "master": [
         {
           "file": "answers/*",
           "target": ".answers"
