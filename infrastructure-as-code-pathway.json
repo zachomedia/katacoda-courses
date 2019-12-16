@@ -1,0 +1,12 @@
+{
+  "title": "Infrastructure as Code",
+  "description": "Presented by the Digital Academy - A high level overview of Containers.",
+  "icon": "fa-code",
+  "courses": [
+    {
+      "course_id": "terraform-kubernetes",
+      "title": "Infrastructure as Code: Terraform for Kubernetes",
+      "description": "In this lab, we will examine using Terraform to configure Kubernetes resources."
+    }
+  ]
+}

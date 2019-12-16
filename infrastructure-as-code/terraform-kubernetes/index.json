@@ -1,0 +1,36 @@
+{
+  "title": "Terraform for Kubernetes",
+  "description": "We experiment with using Terraform to configure Kubernetes resources.",
+  "difficulty": "beginner",
+  "time": "10-15 minutes",
+  "details": {
+    "assets": {
+      "master": [ ]
+    },
+    "steps": [
+      {
+        "title": "Run Basic Docker Commands",
+        "text": "step1.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "env-init.sh",
+      "credits": "Developer(s): [William Hearn](https://sylus.ca) and [Zachary Seguin](https://zacharyseguin.ca)",
+      "courseData": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "uilayout": "terminal",
+    "dashboards": [ ],
+    "uisettings": "yaml",
+    "uimessage1": "\u001b[36;1mDigital Academy training.\u001b[0m"
+  },
+  "backend": {
+    "imageid": "kubernetes"
+  }
+}
