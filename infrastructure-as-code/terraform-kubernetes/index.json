@@ -7,7 +7,7 @@
     "assets": {
       "master": [
         {
-          "file": "*",
+          "file": "terraform/*",
           "target": "/root/terraform"
         }
       ]
