@@ -25,12 +25,12 @@
   },
   "environment": {
     "showdashboard": true,
-    "uilayout": "terminal",
+    "uilayout": "editor-terminal",
     "dashboards": [ ],
     "uisettings": "yaml",
     "uimessage1": "\u001b[36;1mDigital Academy training.\u001b[0m"
   },
   "backend": {
-    "imageid": "kubernetes"
+    "imageid": "kubernetes-cluster-running"
   }
 }
