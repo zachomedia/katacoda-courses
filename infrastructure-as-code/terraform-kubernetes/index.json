@@ -37,7 +37,7 @@
     "uilayout": "editor-terminal",
     "dashboards": [ ],
     "uisettings": "yaml",
-    "uimessage1": "\u001b[36;1mDigital Academy training.\u001b[0m"
+    "uimessage1": "\u001b[36;1mDigital Academy training.\u001b[0m Please note that it may take a few moments to install the Terraform command line."
   },
   "backend": {
     "imageid": "kubernetes-cluster-running"

@@ -35,7 +35,7 @@ Now, let's "plan" the changes. When we run this command, Terraform will compare 
 
 `terraform plan -out plan`{{execute}}
 
-> We pass the `-out -plan` argument in order to save the plan to file, so we can ensure that when we
+> We pass the `-out plan` argument in order to save the plan to file, so we can ensure that when we
 > apply the plan, it only takes the actions we've already reviewed.
 
 The command will output the actions it wants to take in order synchronize your desired state
