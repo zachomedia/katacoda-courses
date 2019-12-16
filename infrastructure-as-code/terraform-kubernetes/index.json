@@ -5,7 +5,12 @@
   "time": "10-15 minutes",
   "details": {
     "assets": {
-      "master": [ ]
+      "master": [
+        {
+          "file": "*",
+          "target": "/root"
+        }
+      ]
     },
     "steps": [
       {
