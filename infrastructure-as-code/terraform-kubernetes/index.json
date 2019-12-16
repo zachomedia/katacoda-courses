@@ -14,7 +14,7 @@
     },
     "steps": [
       {
-        "title": "Run Basic Docker Commands",
+        "title": "Setup",
         "text": "step1.md"
       }
     ],
