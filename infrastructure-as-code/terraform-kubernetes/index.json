@@ -8,7 +8,7 @@
       "master": [
         {
           "file": "*",
-          "target": "/root"
+          "target": "/root/terraform"
         }
       ]
     },
