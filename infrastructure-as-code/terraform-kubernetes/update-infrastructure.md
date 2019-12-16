@@ -1,4 +1,4 @@
-# Configure Terraform project
+# Add Namespace labels
 
 Now let's make a change to our deployed infrastructure. At Acme Inc., we want to track the owners and primary contacts for all of our namespaces. We can do this using labels on our namespace.
 
@@ -28,3 +28,6 @@ We can see that Terraform wants to update our resource and add the labels. Let's
 `terraform apply plan`{{execute}}
 
 And once again check our test namespaces's labels: `kubectl get namespace test --show-labels`{{execute}}
+
+> If you want to check whether your infrastructure is up-to-date, you can run `terraform plan -out plan`{{execute}} at any time.
+> If there are no changes, you will see "No changes. Infrastructure is up-to-date." in the output.
