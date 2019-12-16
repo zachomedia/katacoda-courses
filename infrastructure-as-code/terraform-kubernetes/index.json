@@ -15,7 +15,11 @@
     "steps": [
       {
         "title": "Setup",
-        "text": "step1.md"
+        "text": "setup.md"
+      },
+      {
+        "title": "Updating our infrastructure",
+        "text": "update-infrastructure.md"
       }
     ],
     "intro": {

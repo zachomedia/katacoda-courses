@@ -31,7 +31,7 @@ Open `terraform/namespaces.tf` in the editor, and add the following contents:
 }
 </pre>
 
-Now, let's "plan" the chnages. When we run this command, Terraform will compare our desired state (ie. what we wrong in our .tf files) to the actual state in our environment and inform us of what it needs to do to sync them up.
+Now, let's "plan" the changes. When we run this command, Terraform will compare our desired state (ie. what we wrong in our .tf files) to the actual state in our environment and inform us of what it needs to do to sync them up.
 
 `terraform plan -out plan`{{execute}}
 
