@@ -20,6 +20,14 @@
       {
         "title": "Updating our infrastructure",
         "text": "update-infrastructure.md"
+      },
+      {
+        "title": "Creating linked resources",
+        "text": "create-linked-resources.md"
+      },
+      {
+        "title": "Terraform Modules for reuse",
+        "text": "modules.md"
       }
     ],
     "intro": {
