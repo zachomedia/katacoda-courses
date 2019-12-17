@@ -14,6 +14,9 @@ Resources can be referenced using the following format:
 
 So for our namespace, we can use `kubernetes_namespace.test.id` to get its identifier in the cluster.
 
+If we wanted to include it in a string of other text, Terraform supports string interpolation. For example,
+we could write "key = "something.${kubernetes_namespace.test.id}"`.
+
 Once again, let's open our `terraform/namespaces.tf` file in the editor and update it with:
 
 <pre class="file" data-filename="terraform/namespaces.tf" data-target="replace">resource "kubernetes_namespace" "test" {
