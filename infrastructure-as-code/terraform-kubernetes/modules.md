@@ -4,11 +4,11 @@ Modules allow you to reuse an existing infrastructure setup in your project. In 
 we will utilize the Kubernetes Namespace module shared on GC Accelerators to configure
 a Kubernetes namespace.
 
-Open `terraform/namespaces-module.tf` in the editor.
+Open `terraform/namespaces_module.tf` in the editor.
 
-Let's update the contents to:
+Let's set its contents to:
 
-<pre class="file" data-filename="terraform/namespaces-module.tf" data-target="replace">resource "kubernetes_namespace" "test_module" {
+<pre class="file" data-filename="terraform/namespaces_module.tf" data-target="replace">resource "kubernetes_namespace" "test_module" {
   metadata {
     name = "test-module"
   }

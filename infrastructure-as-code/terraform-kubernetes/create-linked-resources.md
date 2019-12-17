@@ -61,3 +61,9 @@ resource "kubernetes_role_binding" "test_namespace_readers" {
   }
 }
 </pre>
+
+We can now run `terraform plan -out plan`{{execute}} to plan our changes. Since the changes
+look reasonable, let's run `terraform apply plan`{{execute}} to apply those changes to the cluster.
+
+> Using linked resources allows Terraform to identify dependencies so that it ensures
+> that dependent resources are created beforehand.
